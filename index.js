@@ -8,9 +8,9 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     // Title
     {
-        type: "input",
         name: "title",
         message: "What is the title of the project?",
+        type: "input",
         validate: (input) => {
             if (!input) {
                 return "Title of project is required";
@@ -131,12 +131,76 @@ const questions = [
     },
 ];
 
+// Licenses choice
+const licenses = [
+    {
+      name: "Apache License 2.0",
+      value: {
+        title: "Apache License 2.0",
+        licenseBadge: "https://img.shields.io/badge/License-Apache_2.0-blue.svg",
+        badgeLink: "https://opensource.org/licenses/Apache-2.0",
+      },
+    },
+    {
+      name: "GNU General Public License v3.0",
+      value: {
+        title: "GNU General Public License v3.0",
+        licenseBadge: "https://img.shields.io/badge/License-GPLv3-blue.svg",
+        licenseLink: "https://www.gnu.org/licenses/gpl-3.0",
+      },
+    },
+    {
+      name: 'BSD 2-Clause "Simplified" License',
+      value: {
+        title: 'BSD 2-Clause "Simplified" License',
+        licenseBadge:
+          "https://img.shields.io/badge/License-BSD_2--Clause-orange.svg",
+        licenseUrl: "https://opensource.org/licenses/BSD-2-Clause",
+      },
+    },
+    {
+      name: 'BSD 3-Clause "New" or "Revised" License',
+      value: {
+        title: 'BSD 3-Clause "New" or "Revised" License',
+        licenseBadge:
+          "https://img.shields.io/badge/License-BSD_3--Clause-blue.svg",
+        licenseUrl: "(https://opensource.org/licenses/BSD-3-Clause",
+      },
+    },
+    {
+      name: "Boost Software License 1.0",
+      value: {
+        title: "Boost Software License 1.0",
+        licenseBadge:
+          "https://img.shields.io/badge/License-Boost_1.0-lightblue.svg",
+        licenseLink: "https://www.boost.org/LICENSE_1_0.txt",
+      },
+    },
+    {
+      name: "Eclipse Public License 1.0",
+      value: {
+        title: "Eclipse Public License 1.0",
+        licenseBadge: "https://img.shields.io/badge/License-EPL_1.0-red.svg",
+        licenseLink: "https://opensource.org/licenses/EPL-1.0",
+      },
+    },
+];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function saveToFile(fileName, data) {
+    fs.writeFile(fileName, generateMarkdown(data), (error) =>
+    error
+        ? console.log("There was an error: " + error)
+        : console.log("Markdown generated")
+    );
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((responses) => {
+        saveToFile("README.md", responses);
+    });
+}
 
 // Function call to initialize app
 init();
