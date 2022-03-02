@@ -3,12 +3,10 @@
 
 
   # Description
-  ---------------------------------------------------------
 
   The aim of this project is to create a command line application using a combination of tools, that generates a professional README.md from the users answers to questions.
 
   # Table of Contents
-  ---------------------------------------------------------
 
   - [Install](#install)
   - [usage](#usage)
@@ -19,7 +17,6 @@
 
 
   # Technologies Used
-  ---------------------------------------------------------
 
   - Javascript
   - Node.JS
@@ -27,7 +24,6 @@
 
 
   # Installation
-  -------------------------------------------------------- 
 
   1. Clone the repo through GitHub
 
@@ -49,14 +45,17 @@
     node index.js
 
 
-
-
   # Usage
   Run node index.js from the command line in the correct directory
 
 
   # Contribution
   No contribution available yet
+
+
+  # Video Example 
+
+  https://drive.google.com/file/d/1BrI6n99PvaAB7mNOQi0AynDHAvvoFkp8/view
 
 
   # Testing
