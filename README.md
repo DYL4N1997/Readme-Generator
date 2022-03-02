@@ -31,12 +31,12 @@
 
   1. Clone the repo through GitHub
 
-     git clone git@github.com:DYL4N1997/Readme-Generator.git
+    git clone git@github.com:DYL4N1997/Readme-Generator.git
 
 
   2. Once cloned, change to the relevant directory with    index.js 
 
-     cd Readme-Generator
+    cd Readme-Generator
 
 
   3. Install the dependencies
@@ -46,7 +46,7 @@
 
   4. Initiate the app through command line
 
-     node index.js
+    node index.js
 
 
 
