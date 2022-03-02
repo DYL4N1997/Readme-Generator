@@ -1,15 +1,14 @@
-  # README.md Node.JS Generator
+
+  
+  # README.md node Generator
   ![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)
 
 
   # Description
-  ---------------------------------------------------------
+  Create a professional ReadMe from inputs
 
-  The aim of this project is to create a command line application using a combination of tools, that generates a professional README.md from the users answers to questions.
 
   # Table of Contents
-  ---------------------------------------------------------
-
   - [Install](#install)
   - [usage](#usage)
   - [Contribution](#contribution)
@@ -18,37 +17,9 @@
   - [Questions](#questions)
 
 
-  # Technologies Used
-  ---------------------------------------------------------
-
-  - Javascript
-  - Node.JS
-  - Inquirer
-
-
   # Installation
-  -------------------------------------------------------- 
-
-  1. Clone the repo through GitHub
-
-  git clone git@github.com:DYL4N1997/Readme-Generator.git
-
-
-  2. Once cloned, change to the relevant directory with index.js 
-
-  cd Readme-Generator
-
-
-  3. Install the dependencies
-
-  npm i 
-
-
-  4. Initiate the app through command line
-
-  node index.js
-
-
+  Guide on how to install this project run in your own local environment:
+  Install node.js and run from command line
 
 
   # Usage
@@ -73,6 +44,6 @@
   # Questions
   If you have any questions about this project email me @ dylan.metcalf15@gmail.com. More of my projects here https://www.github.com/DYL4N1997
 
-
   # Email
   dylan.metcalf15@gmail.com
+

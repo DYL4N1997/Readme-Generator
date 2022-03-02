@@ -43,8 +43,7 @@ function generateMarkdown(data) {
 
 
   # Questions
-  If you have any questions about this project please feel free to email me @ ${
-    data.email}. You can also view more of my projects here https://www.github.com/${
+  If you have any questions email me @ ${data.email}. More of my projects can be viewed here https://www.github.com/${
     data.github}
 
 
@@ -56,7 +55,7 @@ function generateMarkdown(data) {
 
 // Generate Markdown Function
 const renderLicenseBadge = (license) => {
-  if (license === "Empty") {
+  if (license === "None") {
     return "";
   } else {
     return `![License](${license.licenseBadge})`;
@@ -64,7 +63,7 @@ const renderLicenseBadge = (license) => {
 };
 
 const renderLicenseLink = (license) => {
-  if (license === "Empty") {
+  if (license === "None") {
     return "";
   } else {
     return `${license.licenseLink}`;
@@ -72,13 +71,12 @@ const renderLicenseLink = (license) => {
 };
 
 function renderLicenseSection(license) {
-  if (license === "Empty") {
+  if (license === "None") {
     return `License requires selecting`;
   } else {
     console.log(license);
-    return ` 
-    
-  Click on the link for ${license.title}. For more information on the license: `;
+    return `    
+  Click on the link for ${license.title}. For more information on the license`;
   }
 }
 

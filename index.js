@@ -28,7 +28,7 @@ const licenses = [
         title: 'BSD 2-Clause "Simplified" License',
         licenseBadge:
           "https://img.shields.io/badge/License-BSD_2--Clause-orange.svg",
-        licenseUrl: "https://opensource.org/licenses/BSD-2-Clause",
+        licenseLink: "https://opensource.org/licenses/BSD-2-Clause",
       },
     },
     {
@@ -37,7 +37,7 @@ const licenses = [
         title: 'BSD 3-Clause "New" or "Revised" License',
         licenseBadge:
           "https://img.shields.io/badge/License-BSD_3--Clause-blue.svg",
-        licenseUrl: "(https://opensource.org/licenses/BSD-3-Clause",
+        licenseLink: "(https://opensource.org/licenses/BSD-3-Clause",
       },
     },
     {
