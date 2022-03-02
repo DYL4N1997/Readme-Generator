@@ -29,7 +29,7 @@ function generateMarkdown(data) {
 
 
   # Contribution
-  ${data.contrbution}
+  ${data.contribution}
 
 
   # Testing
@@ -38,8 +38,8 @@ function generateMarkdown(data) {
 
   # License
   ${renderLicenseBadge(data.license)}
-  ${renderLicenseSection(data.license)}
   ${renderLicenseLink(data.license)}
+  ${renderLicenseSection(data.license)}
 
 
   # Questions
@@ -52,6 +52,35 @@ function generateMarkdown(data) {
   ${data.email}
 
 `;
+};
+
+// Generate Markdown Function
+const renderLicenseBadge = (license) => {
+  if (license === "Empty") {
+    return "";
+  } else {
+    return `![License](${license.licenseBadge})`;
+  }
+};
+
+const renderLicenseLink = (license) => {
+  if (license === "Empty") {
+    return "";
+  } else {
+    return `${license.licenseLink}`;
+  }
+};
+
+function renderLicenseSection(license) {
+  if (license === "Empty") {
+    return `License requires selecting`;
+  } else {
+    console.log(license);
+    return ` 
+    
+  Click on the link for ${license.title}. For more information on the license: `;
+  }
 }
 
 
+module.exports = generateMarkdown;
