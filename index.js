@@ -11,7 +11,16 @@ const licenses = [
       value: {
         title: "Apache License 2.0",
         licenseBadge: "https://img.shields.io/badge/License-Apache_2.0-blue.svg",
-        badgeLink: "https://opensource.org/licenses/Apache-2.0",
+        licenseLink: "https://opensource.org/licenses/Apache-2.0",
+      },
+    },
+    {
+      name: "Boost Software License 1.0",
+      value: {
+        title: "Boost Software License 1.0",
+        licenseBadge:
+          "https://img.shields.io/badge/License-Boost_1.0-lightblue.svg",
+        licenseLink: "https://www.boost.org/LICENSE_1_0.txt",
       },
     },
     {
@@ -38,15 +47,6 @@ const licenses = [
         licenseBadge:
           "https://img.shields.io/badge/License-BSD_3--Clause-blue.svg",
         licenseLink: "(https://opensource.org/licenses/BSD-3-Clause",
-      },
-    },
-    {
-      name: "Boost Software License 1.0",
-      value: {
-        title: "Boost Software License 1.0",
-        licenseBadge:
-          "https://img.shields.io/badge/License-Boost_1.0-lightblue.svg",
-        licenseLink: "https://www.boost.org/LICENSE_1_0.txt",
       },
     },
     {
